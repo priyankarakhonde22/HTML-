@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zomato Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff4d4d, #ff9999);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .order-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+    .order-box h2 {
+      text-align: center;
+      color: #e23744;
+    }
+    label {
+      font-weight: bold;
+      margin: 10px 0 5px;
+      display: block;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #e23744;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #e23744;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="order-box">
+    <h2>Zomato Order</h2>
+    <form>
+      <label>👤 Your Name</label>
+      <input type="text" placeholder="Enter your name" required>
+
+      <label>🍔 Select Food</label>
+      <select required>
+        <option value="">--Choose an item--</option>
+        <option>Pizza - ₹250</option>
+        <option>Burger - ₹120</option>
+        <option>Pasta - ₹180</option>
+        <option>Cold Coffee - ₹90</option>
+      </select>
+
+      <label>📍 Delivery Address</label>
+      <textarea rows="3" placeholder="Enter full address" required></textarea>
+
+      <label>💳 Payment Method</label>
+      <select required>
+        <option value="">--Select--</option>
+        <option>UPI</option>
+        <option>Credit/Debit Card</option>
+        <option>Cash on Delivery</option>
+      </select>
+
+      <button type="submit" class="btn">Place Order ✅</button>
+    </form>
+  </div>
+
+</body>
+</html>
