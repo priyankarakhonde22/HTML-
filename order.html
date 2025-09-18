@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #fafafa;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      background: #ff4d4d;
+      padding: 12px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .navbar div {
+      cursor: pointer;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .box {
+      border: 2px solid #444;
+      padding: 15px;
+      border-radius: 6px;
+      background: #fff;
+      text-align: center;
+      min-width: 120px;
+      flex: 1;
+    }
+
+    .food-options {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .food-options div {
+      border: 1px solid #777;
+      padding: 6px 12px;
+      border-radius: 5px;
+      background: #f1f1f1;
+    }
+
+    .offers {
+      background: #ffe680;
+      border: 2px dashed #ff9900;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div>Home</div>
+    <div>Restaurants</div>
+    <div>Food</div>
+    <div>Offers%</div>
+    <div>Account / Login</div>
+  </div>
+
+  <!-- Recommended Section -->
+  <h2 style="margin-top:25px;">Recommended For You</h2>
+  <div class="section">
+    <div class="box">Pizza</div>
+    <div class="box">Cake</div>
+    <div class="box">Thali</div>
+    <div class="box">Biryani</div>
+  </div>
+
+  <!-- Veg / Non-Veg -->
+  <div class="food-options">
+    <div>Veg ✅</div>
+    <div>Non-Veg 🍗</div>
+  </div>
+
+  <!-- Other Options -->
+  <div class="section">
+    <div class="box">History</div>
+    <div class="box">Delivery</div>
+    <div class="box">District</div>
+  </div>
+
+  <!-- Offers -->
+  <div class="offers">
+    Special Offers Available Today!
+  </div>
+
+</body>
+</html>
